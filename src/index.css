@@ -1,0 +1,338 @@
+/* RESET GENERALE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: url("/grandprix.jpg") center/cover no-repeat fixed;
+  color: #f0f0f0;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.nav-links {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  background-color: #111;
+  padding: 1rem;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  border-radius: 8px;
+  gap: 1rem;
+}
+
+.nav-links.desktop {
+  display: flex;
+  flex-direction: row;
+  position: static;
+  background: none;
+  gap: 2rem;
+}
+
+.nav-links.open {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ff8000;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* HERO - IMMAGINE LOGO */
+.hero-banner {
+  width: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)
+  );
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-banner img {
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  opacity: 0.95;
+  filter: blur(1.5px) brightness(1.05) contrast(1.1);
+  mix-blend-mode: multiply;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* INTRO TESTO */
+.hero-text {
+  padding: 3rem 2rem;
+  background-color: rgba(0, 0, 0, 0.65);
+  text-align: center;
+}
+
+.hero-text p {
+  max-width: 800px;
+  margin: 1.2rem auto;
+  font-size: 1.2rem;
+  color: #f0f0f0;
+}
+/* GALLERIA SERVIZI */
+.service-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 3rem auto 1rem;
+  padding: 0 1rem;
+  max-width: 1100px;
+}
+
+.service-gallery img {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.service-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* SLOGAN */
+.gallery-slogan {
+  background-color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  padding: 3rem 2rem;
+  margin-top: 2rem;
+}
+
+.gallery-slogan h2 {
+  font-size: 1.9rem;
+  color: #ff8000;
+  margin-bottom: 1.2rem;
+}
+
+.gallery-slogan p {
+  font-size: 1.1rem;
+  max-width: 850px;
+  margin: 0.8rem auto;
+  color: #ddd;
+}
+
+/* SEZIONE SERVIZI */
+#servizi {
+  scroll-margin-top: 100px;
+}
+
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.servizi-title {
+  text-align: center;
+  color: #ff8000;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonne fisse su desktop */
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-items: center;
+}
+
+.process-card {
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 320px; /* controlla la larghezza massima della card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+
+.process-card:hover {
+  transform: translateY(-6px);
+}
+
+.process-card h3 {
+  font-size: 1.3rem;
+  color: #ff8000;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.process-card p {
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+/* CONTATTI */
+.info-contatti {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.info-contatti h3 {
+  font-size: 1.8rem;
+  color: #ff8000;
+  margin-bottom: 1rem;
+}
+
+.info-contatti h4 {
+  color: #ff8000;
+  margin-top: 1.5rem;
+}
+
+.info-contatti p,
+.info-contatti a {
+  color: #ccc;
+  font-size: 1rem;
+  margin: 0.3rem 0;
+  text-decoration: none;
+}
+
+.info-contatti a:hover {
+  text-decoration: underline;
+}
+
+.orari {
+  list-style: none;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.orari li {
+  margin-bottom: 0.5rem;
+}
+
+/* MAPPA */
+.mappa iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  margin-top: 2rem;
+}
+.review-banner {
+  background: linear-gradient(to right, #222, #111);
+  padding: 2.5rem 1rem;
+  text-align: center;
+  color: #fff;
+  margin: 2rem 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.review-content h3 {
+  font-size: 2rem;
+  color: #ffa500;
+  margin-bottom: 0.5rem;
+}
+
+.review-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  color: #ddd;
+}
+
+.google-review-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  color: #111;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.google-review-button img {
+  width: 24px;
+  height: 24px;
+}
+
+.google-review-button:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+.footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+strong {
+  color: #ff8000;
+}
+@media (max-width: 1024px) {
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonne su tablet */
+  }
+}
+
+@media (max-width: 600px) {
+  .process-grid {
+    grid-template-columns: 1fr; /* 1 colonna su mobile */
+  }
+}

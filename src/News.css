@@ -1,0 +1,134 @@
+/* src/News.css */
+
+.news-page {
+  background: url("../public/porsche.jpg") center/cover no-repeat fixed;
+  min-height: 100vh;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Contenitori con effetto vetro */
+.news-hero,
+.news-cta {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px) saturate(160%);
+  -webkit-backdrop-filter: blur(8px) saturate(160%);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 1000px;
+  animation: fadeInUp 0.8s ease both;
+  margin-bottom: 30px;
+}
+
+/* Titolo */
+.news-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffa500;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Testo */
+.news-hero p,
+.news-cta p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #f1f1f1;
+}
+
+/* Evidenziazione */
+.news-cta p strong,
+.news-hero p strong {
+  color: #ffa500;
+}
+
+/* Pulsante */
+.back-home-btn,
+.home-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 28px;
+  background-color: #ffa500;
+  color: #111;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.back-home-btn:hover,
+.home-button:hover {
+  background-color: #ff8800;
+  transform: scale(1.05);
+}
+
+/* Wrapper per il bottone */
+.home-button-wrapper {
+  text-align: center;
+}
+
+.news-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  margin: 2rem auto;
+  max-width: 1000px;
+  backdrop-filter: blur(6px);
+}
+
+.news-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 1rem auto;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+
+/* Animazione */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .news-hero,
+  .news-cta {
+    padding: 25px;
+  }
+
+  .news-hero h1 {
+    font-size: 2rem;
+  }
+
+  .news-hero p,
+  .news-cta p {
+    font-size: 1rem;
+  }
+
+  .back-home-btn,
+  .home-button {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+}
