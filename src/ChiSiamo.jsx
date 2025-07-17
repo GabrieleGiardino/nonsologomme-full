@@ -10,15 +10,15 @@ function ChiSiamo() {
         <div className="text-content">
           <h1>Chi Siamo</h1>
           <p>
-            <strong>Non Solo Gomme</strong> nasce dalla determinazione e dalla visione di <strong>Simone</strong>, 
+            <strong>Non Solo Gomme</strong> nasce dalla determinazione e dalla visione di <strong>Simone</strong>,
             un giovane imprenditore che ha trasformato la sua passione per i motori in una realtà di eccellenza nel panorama automobilistico di Parma.
           </p>
           <p>
-            Oggi siamo orgogliosi di essere considerati un <strong>punto di riferimento nel settore gomme</strong>, 
+            Oggi siamo orgogliosi di essere considerati un <strong>punto di riferimento nel settore gomme</strong>,
             con una valutazione media di <strong>4,8 stelle su Google</strong> e decine di recensioni che premiano la nostra serietà, competenza e affidabilità.
           </p>
           <p>
-            Ogni intervento – dalla sostituzione pneumatici alla piccola meccanica – è svolto con attenzione artigianale, 
+            Ogni intervento – dalla sostituzione pneumatici alla piccola meccanica – è svolto con attenzione artigianale,
             tecnologie all’avanguardia e una sola missione: <strong>offrire un servizio su misura che garantisca sicurezza e prestazioni elevate</strong>.
           </p>
           <p>

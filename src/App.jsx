@@ -30,8 +30,10 @@ function App() {
           <li><a href="#servizi">Servizi</a></li>
           <li><Link to="/chi-siamo">Chi Siamo</Link></li>
           <li><a href="#contatti">Contatti</a></li>
-          <li><Link to="/news">News</Link></li>
+          <li><Link to="/news">Novità</Link></li>
+          <li><a href="#recensioni">Lascia una recensione</a></li>
         </ul>
+
       </nav>
 
       {/* HERO */}
@@ -56,53 +58,53 @@ function App() {
       </div>
 
       {/* SLOGAN DOPO GALLERY */}
-<section className="gallery-slogan">
-  <h2>Leader nel settore dei pneumatici e dell'assistenza veicoli</h2>
-  <p>
-    Da anni siamo il punto di riferimento a Parma per tutti coloro che cercano servizi di alta qualità per il proprio veicolo.
-  </p>
-  <p>
-    Dalla sostituzione gomme alla convergenza, dalla bilanciatura alla consulenza tecnica, ogni intervento è svolto con precisione, passione e attrezzature all'avanguardia.
-  </p>
-  <p>
-    I nostri clienti non cercano solo un'officina: scelgono un partner di fiducia, pronto a garantire sicurezza e prestazioni su ogni strada.
-  </p>
-  <p>
-    Affidati a <strong>Non Solo Gomme</strong> e vivi un'esperienza di assistenza su misura, pensata per chi ama guidare in totale tranquillità.
-  </p>
-</section>
+      <section className="gallery-slogan">
+        <h2>Leader nel settore dei pneumatici e dell'assistenza veicoli</h2>
+        <p>
+          Da anni siamo il punto di riferimento a Parma per tutti coloro che cercano servizi di alta qualità per il proprio veicolo.
+        </p>
+        <p>
+          Dalla sostituzione gomme alla convergenza, dalla bilanciatura alla consulenza tecnica, ogni intervento è svolto con precisione, passione e attrezzature all'avanguardia.
+        </p>
+        <p>
+          I nostri clienti non cercano solo un'officina: scelgono un partner di fiducia, pronto a garantire sicurezza e prestazioni su ogni strada.
+        </p>
+        <p>
+          Affidati a <strong>Non Solo Gomme</strong> e vivi un'esperienza di assistenza su misura, pensata per chi ama guidare in totale tranquillità.
+        </p>
+      </section>
 
 
-<section id="servizi" className="section">
-  <h2 className="servizi-title">I nostri servizi</h2>
+      <section id="servizi" className="section">
+        <h2 className="servizi-title">I nostri servizi</h2>
 
-  <div className="process-grid">
-    <div className="process-card">
-      <h3>🛞 Cambio gomme</h3>
-      <p>Velocità e sicurezza su ogni tipo di veicolo.</p>
-    </div>
-    <div className="process-card">
-      <h3>⚖️ Equilibratura</h3>
-      <p>Massimo comfort e durata per le tue gomme.</p>
-    </div>
-    <div className="process-card">
-      <h3>↔️ Convergenza</h3>
-      <p>Precisione di guida e riduzione usura pneumatici.</p>
-    </div>
-    <div className="process-card">
-      <h3>🔧 Piccola meccanica</h3>
-      <p>Revisione freni, raddrizzatura cerchi, cambio olio.</p>
-    </div>
-    <div className="process-card">
-      <h3>❄️ Ricarica clima</h3>
-      <p>Diagnosi sistema di climatizzazione, e ricarica clima.</p>
-    </div>
-    <div className="process-card">
-      <h3>⚙️ Tagliando completo</h3>
-      <p>Revisione periodica dell'auto mobile, cambio filtri, olio, e check completo.</p>
-    </div>
-  </div>
-</section>
+        <div className="process-grid">
+          <div className="process-card">
+            <h3>🛞 Cambio gomme</h3>
+            <p>Velocità e sicurezza su ogni tipo di veicolo.</p>
+          </div>
+          <div className="process-card">
+            <h3>⚖️ Equilibratura</h3>
+            <p>Massimo comfort e durata per le tue gomme.</p>
+          </div>
+          <div className="process-card">
+            <h3>↔️ Convergenza</h3>
+            <p>Precisione di guida e riduzione usura pneumatici.</p>
+          </div>
+          <div className="process-card">
+            <h3>🔧 Piccola meccanica</h3>
+            <p>Revisione freni, raddrizzatura cerchi, cambio olio.</p>
+          </div>
+          <div className="process-card">
+            <h3>❄️ Ricarica clima</h3>
+            <p>Diagnosi sistema di climatizzazione, e ricarica clima.</p>
+          </div>
+          <div className="process-card">
+            <h3>⚙️ Tagliando completo</h3>
+            <p>Revisione periodica dell'auto mobile, cambio filtri, olio, e check completo.</p>
+          </div>
+        </div>
+      </section>
 
 
       {/* CONTATTI */}
@@ -138,22 +140,37 @@ function App() {
       </div>
 
       {/* BANNER RECENSIONI */}
-<section className="review-banner">
-  <div className="review-content">
-    <h3>⭐ 4,8 su Google</h3>
-    <p>Apprezzati da oltre 140 clienti soddisfatti. La tua opinione conta!</p>
-    <a
-  href="https://www.google.com/search?q=Non+Solo+Gomme+Parma&hl=it"
-  target="_blank"
-  rel="noreferrer"
-  className="google-review-button"
->
-  <FcGoogle size={24} style={{ marginRight: "8px" }} />
-  Lascia una recensione
-</a>
+      <section id="recensioni" className="review-banner">
+        <div class="review-content">
+          <h2>Recensioni dei clienti</h2>
+          <div class="review-rating">
+            <h3> 4.8 ⭐⭐⭐⭐ </h3>
+          </div>
+          <p>Con oltre 140 recensioni di clienti soddisfatti</p>
+          <p>Leggi cosa dicono i nostri clienti o lascia anche tu una recensione!</p>
+        </div>
+        <div className="review-buttons">
+          <a
+            href="https://www.google.com/search?q=Non+Solo+Gomme+Parma&hl=it"
+            target="_blank"
+            rel="noreferrer"
+            className="google-review-button"
+          >
+            <FcGoogle size={24} style={{ marginRight: "8px", verticalAlign: "middle" }} />
+            Lascia una recensione su Google
+          </a>
 
-  </div>
-</section>
+          <a
+            href="https://pneumatici-pneus-online.it/montaggio-pneumatici/parma/parma-nonsologomme-srl-23776.html"
+            target="_blank"
+            rel="noreferrer"
+            className="pneus-review-button"
+          >
+            🛞 Lascia una recensione su Pneus Online
+          </a>
+        </div>
+
+      </section>
 
 
       {/* FOOTER */}

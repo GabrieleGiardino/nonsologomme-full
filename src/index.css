@@ -77,10 +77,8 @@ body {
 /* HERO - IMMAGINE LOGO */
 .hero-banner {
   width: 100%;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.4), 
-    rgba(0, 0, 0, 0.4)
-  );
+  background: linear-gradient(rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4));
   padding: 4rem 1rem;
   display: flex;
   justify-content: center;
@@ -115,6 +113,7 @@ body {
   font-size: 1.2rem;
   color: #f0f0f0;
 }
+
 /* GALLERIA SERVIZI */
 .service-gallery {
   display: flex;
@@ -182,7 +181,8 @@ body {
 
 .process-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colonne fisse su desktop */
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 colonne fisse su desktop */
   gap: 2rem;
   margin-top: 2rem;
   justify-items: center;
@@ -193,7 +193,8 @@ body {
   border-radius: 12px;
   padding: 2rem;
   width: 100%;
-  max-width: 320px; /* controlla la larghezza massima della card */
+  max-width: 320px;
+  /* controlla la larghezza massima della card */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
   text-align: left;
@@ -267,6 +268,7 @@ body {
   border: none;
   margin-top: 2rem;
 }
+
 .review-banner {
   background: linear-gradient(to right, #222, #111);
   padding: 2.5rem 1rem;
@@ -312,6 +314,48 @@ body {
   transform: scale(1.05);
 }
 
+.review-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.review-banner h2 {
+  color: #ff8000;
+}
+
+.pneus-review-button {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.google-review-button {
+  background-color: #ffffff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+.google-review-button:hover {
+  background-color: #f1f1f1;
+}
+
+.pneus-review-button {
+  background-color: #005caa;
+  color: #fff;
+}
+
+.pneus-review-button:hover {
+  background-color: #004080;
+}
+
 /* FOOTER */
 .footer {
   background-color: #111;
@@ -325,14 +369,17 @@ body {
 strong {
   color: #ff8000;
 }
+
 @media (max-width: 1024px) {
   .process-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 colonne su tablet */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 colonne su tablet */
   }
 }
 
 @media (max-width: 600px) {
   .process-grid {
-    grid-template-columns: 1fr; /* 1 colonna su mobile */
+    grid-template-columns: 1fr;
+    /* 1 colonna su mobile */
   }
 }
