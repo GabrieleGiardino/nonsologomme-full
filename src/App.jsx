@@ -141,9 +141,9 @@ function App() {
 
       {/* BANNER RECENSIONI */}
       <section id="recensioni" className="review-banner">
-        <div class="review-content">
+      <div className="review-content">
           <h2>Recensioni dei clienti</h2>
-          <div class="review-rating">
+          <div className="review-rating">
             <h3> 4.8 ⭐⭐⭐⭐ </h3>
           </div>
           <p>Con oltre 140 recensioni di clienti soddisfatti</p>
